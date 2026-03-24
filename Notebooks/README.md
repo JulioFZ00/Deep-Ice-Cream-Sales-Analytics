@@ -93,7 +93,9 @@ The analysis shows that revenue is driven by a combination of sales volume and a
 
 However, this relationship is not consistent across all cases, indicating that different products and regions may generate revenue through distinct strategies — either through high frequency of sales or higher value per order.
 
-These findings highlight the importance of analyzing volume and ticket together to better understand business performance and support decision-making.
+Additionally, the temporal analysis reveals a shift from higher volatility in 2023 to a more stable and consistent growth pattern in 2024, suggesting a maturing business with improved predictability.
+
+Overall, these findings highlight the importance of analyzing volume, ticket, and temporal dynamics together to better understand business performance and support decision-making.
 
 ---
 ## ⚙️ Technologies  
