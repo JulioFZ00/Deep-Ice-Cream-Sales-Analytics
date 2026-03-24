@@ -35,10 +35,20 @@ The fact table ensures:
 
 ---
 ## 🔍 Approach / Analysis Performed
-### Descriptive Analysis
+
+The analysis was structured in two main stages:
+
+### 1. Exploratory Data Analysis (EDA)
 - Distribution of prices and total sales values
 - Identification of skewness and outliers
 - Relationship between quantity sold and total value
+
+### 2. Hypothesis Testing and Business Analysis
+- Revenue concentration across products (Pareto analysis)
+- Comparison between volume and average ticket
+- Evaluation of revenue distribution by region
+- Analysis of temporal patterns and revenue stability (MoM)
+- Comparison between 2023 and 2024 performance
 
 ### Product Analysis
 - Sales volume by product
