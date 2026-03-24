@@ -1,4 +1,4 @@
-<img width="627" height="376" alt="image" src="https://github.com/user-attachments/assets/4009d162-c22b-426e-8879-02dc9fe02214" /># Deep Ice Cream (DIC) – Sales EDA Project
+# Deep Ice Cream (DIC)
 
 This project explores sales data to uncover patterns in revenue, product performance, and regional behavior, supporting data-driven decision-making.
 
