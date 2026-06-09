@@ -129,10 +129,9 @@ This pattern suggests that the business became more stable over time, potentiall
 
 Three forecasting approaches were evaluated to predict weekly sales:
 
-|Model|	MAE	RMSE|	MAPE|
-|ARIMA (3,1,1)	|38.56|	44.17	22.14%|
-|SARIMA	|49.02|	64.20	|32.60%
-|Random Forest| 27.26|	33.61	17.69%|
+  <p align="center">
+  <img width="660" height="392" alt="random_forest_real_vs_previsto" src="https://github.com/user-attachments/assets/f8e2d694-6fc5-40d1-b2f3-d4fa4ad9ea54" />
+</p>
 
 The Random Forest model achieved the best overall performance, outperforming both ARIMA and SARIMA across all evaluation metrics.
 
