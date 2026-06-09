@@ -7,17 +7,20 @@ This project explores sales data to uncover patterns in revenue, product perform
 This project presents an Exploratory Data Analysis (EDA) of a simulated sales system for an ice cream business, built on top of a relational database developed in SQL.
 
 The main goals of this analysis are:
-- To understand sales behavior over time
-- To evaluate performance by product, customer, and region
-- To identify patterns, seasonality, and business insights
-- To validate data consistency before advanced analytics
+- To understand sales behavior over time;
+- To evaluate performance by product, customer, and region;
+- To identify patterns, seasonality, and business insights;
+- To validate data consistency before advanced analytics;
+- To develop and compare forecasting models for future sales prediction.
   
 ---
 ## 🗂 Project Structure
-- **sql/**: Database creation scripts, data population, and business rules
+**sql/**: Database creation scripts, data population, and business rules;
 - **notebooks/**:
-  - `01_EDA_Vendas.ipynb`: Exploratory Data Analysis using Python
-- **model/**: Relational database model and documentation
+  - ``01_EDA_Vendas.ipynb``: Exploratory Data Analysis using Python;
+  - ``02_Analise_Vendas.ipynb``: Business Analysis and Insights;
+  - ``03_Predicao_Vendas.ipynb``: Sales Forecasting using Time Series and Machine Learning models;
+- **model/**: Relational database model and documentation.
 
 ---
 ## 🧱 Data Model Overview
@@ -42,6 +45,7 @@ The analysis was structured in two main stages:
 - Distribution of prices and total sales values
 - Identification of skewness and outliers
 - Relationship between quantity sold and total value
+- Initial data quality validation
 
 ### 2. Hypothesis Testing and Business Analysis
 - Revenue concentration across products (Pareto analysis)
@@ -66,6 +70,28 @@ The analysis was structured in two main stages:
 - Comparison between 2023 and 2024
 - Identification of seasonal patterns
 - Performance comparison of top-performing states over time
+
+### 3. Sales Forecasting
+
+To estimate future sales behavior, different forecasting approaches were evaluated.
+
+**Time Series Analysis**
+- Weekly sales aggregation;
+- Stationarity testing (ADF Test);
+- Autocorrelation analysis (ACF);
+- Partial autocorrelation analysis (PACF);
+- Seasonal decomposition.
+
+**Forecasting Models**
+- ARIMA;
+- SARIMA;
+- Random Forest Regressor.
+
+**The models were evaluated using:**
+
+- MAE (Mean Absolute Error);
+- RMSE (Root Mean Squared Error);
+- MAPE (Mean Absolute Percentage Error).
 
 ---
 ## 📊 Key Insights
@@ -97,20 +123,42 @@ In contrast, 2024 presents a more controlled and consistent behavior, with smoot
 This pattern suggests that the business became more stable over time, potentially reflecting a more consolidated customer base, improved demand predictability, and a more structured sales cycle.
 
 ---
+
+📈 Forecasting Results
+
+Three forecasting approaches were evaluated to predict weekly sales:
+
+|Model|	MAE	RMSE|	MAPE|
+|ARIMA (3,1,1)	|38.56|	44.17	22.14%|
+|SARIMA	|49.02|	64.20	|32.60%
+|Random Forest| 27.26|	33.61	17.69%|
+
+The Random Forest model achieved the best overall performance, outperforming both ARIMA and SARIMA across all evaluation metrics.
+
+While ARIMA and SARIMA were able to capture part of the temporal dynamics of the series, Random Forest demonstrated a greater ability to learn patterns from historical sales behavior through engineered lag features.
+
+Real vs Forecasted Sales (Random Forest)
+
+The model was able to follow the overall sales trend and capture a significant portion of the observed fluctuations, producing more accurate forecasts than the statistical approaches evaluated.
+
+---
+
 ## 🧠 Conclusion
 
-The analysis shows that revenue is driven by a combination of sales volume and average ticket. Top-performing products and regions tend to combine both high volume and higher value per transaction.
+The analysis shows that revenue is driven by a combination of sales volume, average ticket, product mix, and regional performance.
 
-However, this relationship is not consistent across all cases, indicating that different products and regions may generate revenue through distinct strategies — either through high frequency of sales or higher value per order.
+From a business perspective, a small group of products is responsible for most of the revenue, while sales behavior became more stable and predictable between 2023 and 2024.
 
-Additionally, the temporal analysis reveals a shift from higher volatility in 2023 to a more stable and consistent growth pattern in 2024, suggesting a maturing business with improved predictability.
+From a forecasting perspective, the comparison between statistical and Machine Learning approaches demonstrated that Random Forest produced the most accurate predictions, achieving lower forecasting errors than ARIMA and SARIMA.
 
-Overall, these findings highlight the importance of analyzing volume, ticket, and temporal dynamics together to better understand business performance and support decision-making.
+Overall, the project highlights the importance of combining Exploratory Data Analysis, Business Analytics, Time Series Analysis, and Machine Learning to better understand business performance and support decision-making.
 
 ---
 ## ⚙️ Technologies  
 - Python (Pandas, NumPy)
 - SQL (DuckDB)
+- Scikit-Learn
+- Statsmodels
 - Data visualization (Matplotlib, Seaborn)
 - Jupyter Notebook
 
