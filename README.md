@@ -60,6 +60,12 @@ A abordagem adotada foi dividida em quatro pilares principais:
 
 ## 📂 Estrutura do Projeto
 
+O projeto foi organizado de forma a separar as diferentes etapas do processo analítico, desde a exploração inicial dos dados até o desenvolvimento dos
+modelos preditivos.
+
+Cada notebook representa uma etapa específica da análise, permitindo melhor organização do fluxo de trabalho e facilitando a reprodução dos resultados
+obtidos.
+
 ```
 Deep-Ice-Cream-Sales-Analytics/
 ├── Notebooks/
@@ -71,33 +77,39 @@ Deep-Ice-Cream-Sales-Analytics/
 
 ```
 
+---
+
+### Descrição dos Notebooks
+
+**01_EDA_Vendas.ipynb**
+
+Validação, tratamento e exploração inicial dos dados de vendas.
+
+**02_Analise_Negocio.ipynb**
+
+Análises voltadas para identificação de padrões, tendências e geração de insights de negócio.
+
+**03_Machine_Learning.ipynb**
+
+Desenvolvimento e avaliação de modelos preditivos para previsão de vendas.
+
 --- 
 
-## 🔎 Analysis Performed
+## 🔎 Análises Realizadas
 
-The exploratory analysis includes:
+Com o objetivo de responder às questões levantadas pela diretoria, foram realizadas análises exploratórias e descritivas dos dados históricos da empresa.
 
-### Data validation
-- verification of missing values  
-- consistency checks  
-- dataset structure validation  
+As análises permitiram identificar padrões de consumo, tendências de vendas, diferenças regionais e comportamentos dos clientes, fornecendo informações
+relevantes para apoiar a tomada de decisão e futuras iniciativas de previsão de demanda.
 
-### Sales analysis
-- revenue distribution  
-- sales by product  
-- sales by category  
+As principais frentes de análise foram:
 
-### Customer analysis
-- purchase patterns  
-- number of orders per customer  
-
-### Geographic analysis
-- sales distribution by state  
-
-### Time analysis
-- sales trends  
-- seasonality patterns  
-- revenue evolution over time  
+- Análise exploratória dos dados
+- Análise de vendas
+- Análise de clientes
+- Análise geográfica
+- Análise temporal
+- Modelagem preditiva
 
 ---
 
