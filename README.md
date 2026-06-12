@@ -71,7 +71,7 @@ Deep-Ice-Cream-Sales-Analytics/
 
 ```
 
----
+--- 
 
 ## 🔎 Analysis Performed
 
