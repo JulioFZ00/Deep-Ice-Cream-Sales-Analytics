@@ -113,75 +113,67 @@ As principais frentes de análise foram:
 
 ---
 
-## 📈 Business Questions
+## 🛠️ Tecnologias Utilizadas
 
-Some of the business questions explored in this project include:
+As seguintes tecnologias e ferramentas foram utilizadas durante o desenvolvimento do projeto:
 
-- Which products generate the most revenue?
-- How are sales distributed across states?
-- Are there seasonal patterns in ice cream sales?
-- What is the distribution of customer purchasing behavior?
+### Linguagens
 
----
+* Python
+* SQL
 
-## 📊 Key Insights
+### Manipulação e Consulta de Dados
 
-### Revenue Stabilization in the Second Year
+* Pandas
+* DuckDB
 
-The second year of operation shows a more stable revenue pattern compared to the first year.  
-While the first year presents stronger fluctuations, the second year appears to follow a more consistent growth pattern across the months.
+### Visualização de Dados
 
-This behavior may indicate a **more consolidated customer base and increasing recurring purchases** as the company matures.
+* Matplotlib
 
-<p align="center">
-  <img width="630" src="https://github.com/user-attachments/assets/6a0637a2-8c73-4aa0-9541-bc7b38c65038"/>
-</p>
+### Machine Learning e Séries Temporais
 
-Revenue in 2024 starts significantly higher in the first quarter,
-declines during mid-year months, and gradually increases again toward the end of the year,
-suggesting potential seasonal demand patterns.
+* Scikit-Learn
+* Statsmodels
 
----
+### Ambiente de Desenvolvimento
 
-### Product Average Ticket Analysis
+* Jupyter Notebook
 
-The average ticket per product highlights differences in customer spending behavior across the product portfolio.
+### Versionamento
 
-Some products generate a high volume of sales but with a lower ticket value, while others show fewer transactions but higher revenue per purchase.
-
-<p align="center">
-  <img width="630" src="https://github.com/user-attachments/assets/a2b2efd5-1000-42a1-9345-8a1da5b0cba9" />
-</p>
+* Git
+* GitHub
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 Como Explorar o Projeto
 
-1. Clone the repository
+O projeto está organizado em notebooks independentes que representam as diferentes etapas da análise.
 
-```bash
-git clone https://github.com/JulioFZ00/Portfolio_DataScience.git
-cd Portfolio_DataScience
-pip install pandas duckdb matplotlib seaborn
-```
+Para visualizar o desenvolvimento completo, recomenda-se seguir a seguinte ordem:
 
-2. Open the notebook
+1. **01_EDA_Vendas.ipynb**
 
-```bash
-jupyter notebook Notebooks/01_EDA_Vendas.ipynb
-```
+   * Validação e exploração inicial dos dados.
 
-The dataset used in the analysis is available in the **Notebooks/dados/** directory.
+2. **02_Analise_Negocio.ipynb**
 
-The **SQL/** folder contains example SQL queries used for analytical exploration.
+   * Geração de indicadores e insights de negócio.
+
+3. **03_Machine_Learning.ipynb**
+
+   * Desenvolvimento e avaliação dos modelos preditivos.
+
+Os notebooks podem ser executados em ambiente Jupyter Notebook após a instalação das dependências do projeto.
 
 ---
 
-## 👤 Author
+## 👤 Autor
 
-**Julio F.**
+**Julio Felipe Zapolla**
 
-Data Science enthusiast passionate about analytics, problem solving and data-driven decision making.
+Profissional em formação na área de Dados, com foco em Análise de Dados, Ciência de Dados e Machine Learning.
 
-GitHub:  
+GitHub:
 https://github.com/JulioFZ00
